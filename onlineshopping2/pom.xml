@@ -12,6 +12,12 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<!-- Linking the backend project -->
+			<groupId>net.sdn</groupId>
+			<artifactId>onlinebackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -19,13 +25,13 @@
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<!-- springframework: spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-        <!-- jstl -->
+		<!-- jstl -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
